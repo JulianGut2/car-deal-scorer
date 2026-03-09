@@ -7,3 +7,9 @@ df = pd.read_csv("data/vehicles.csv")
 df = clean_data(df)
 
 train_model(df)
+
+from src.scorer import score_deal
+
+print(score_deal(20000, 15000))
+print(score_deal(20000, 20000)) 
+print(score_deal(20000, 25000))  
