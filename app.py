@@ -3,7 +3,7 @@ import pandas as pd
 from src.data_cleaner import clean_data
 import joblib
 
-model = joblib.load("model.pkl")
+model = joblib.load("data/model.pkl")
 
 st.set_page_config(page_title = 'Car Deal Scorer', layout = "wide")
 

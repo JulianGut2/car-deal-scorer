@@ -24,6 +24,6 @@ def train_model(df):
     rmse = np.sqrt(mean_squared_error(y_test, y_pred))
     print(f"RMSE: ${rmse:,.2f}")
 
-    joblib.dump(model, "model.pkl")
+    joblib.dump(model, "data/model.pkl")
 
     return model
